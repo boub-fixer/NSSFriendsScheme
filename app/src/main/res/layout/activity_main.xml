@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/background"
+                android:gravity="center"
+                android:background="@drawable/schemepink"
+                android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/textScheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="30sp"
+                    android:textColor="#3129d6"
+                    android:fontFamily="sans-serif-light"
+                    android:textIsSelectable="true"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            <TextView
+                    android:id="@+id/textDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/welcome2"
+                    android:layout_below="@id/textScheme"
+                    android:textColor="#3129d6"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textIsSelectable="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+            <TextView
+                    android:id="@+id/congs"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/textDesc"
+                    android:textSize="15sp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold"
+                    android:text="@string/congs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/winner"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/congs"
+                    android:textSize="35sp"
+                    android:textColor="#ff0000"
+                    android:textStyle="bold"
+                    android:text="@string/winner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/quoteLabel"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/winner"
+                    android:textSize="15sp"
+                    android:textColor="#ff00ff"
+                    android:textStyle="bold"
+                    android:text="@string/quoteIntro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/quote"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/quoteLabel"
+                    android:textSize="20sp"
+                    android:textColor="#4527A0"
+                    android:textStyle="italic"
+                    android:text="@string/quoteIntro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/shuffle"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shuffle"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+            android:id="@+id/blueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Blue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+    />
+    <Button
+            android:id="@+id/revertBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revert"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+    />
+    <Button
+            android:id="@+id/greenBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+
+<!--
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+-->
